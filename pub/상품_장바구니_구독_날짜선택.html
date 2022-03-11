@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>clean'd</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="css/front.css">
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/front.js"></script>
+
+</head>
+<body>
+	
+	
+	
+	<div id="header">
+		<img src="img/common/tmp_hed.png">
+	</div>
+	<!-- // header -->
+	
+	
+	<div class="sub-head product pc">
+		<div class="inner">
+			<h2 class="h2">장바구니</h2>
+			
+		</div>
+	</div>
+	
+	<div class="inner">
+		<div class="table1 cart-type mb30 pc">
+			<table>
+				<colgroup>
+					<col style="width:170px">
+					<col style="">
+					<col style="width:140px">
+					<col style="width:180px">
+					<col style="width:180px">
+					<col style="width:100px">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>상품정보</th>
+						<th>상품가격</th>
+						<th>수량</th>
+						<th>정기구독할인</th>
+						<th>판매가</th>
+						<th>&nbsp;</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><div class="prd-thum"><img src="img/product/tmp_thum.jpg"></div></td>
+						<td>
+							<div class="prd-info">
+								<strong>스타터패키지</strong>
+								<div class="opt">칫솔 1 + 치약 30g + 치실 + 가글 </div>
+							</div>
+						</td>
+						<td>10,580원</td>
+						<td>
+							<div class="length">
+								<button class="btn-minus"></button>
+								<input type="text" class="inp" value="1">
+								<button class="btn-plus"></button>
+							</div>
+
+						</td>
+						<td>1,580원</td>
+						<td><strong>15,800원</strong></td>
+						<td><button class="btn-common-del"><i class="xi-close-thin"></i></button></td>
+					</tr>
+					<tr>
+						<td><div class="prd-thum"><img src="img/product/tmp_thum.jpg"></div></td>
+						<td>
+							<div class="prd-info">
+								<strong>스타터패키지</strong>
+								<div class="opt">칫솔 1 + 치약 30g + 치실 + 가글 </div>
+							</div>
+						</td>
+						<td>10,580원</td>
+						<td>
+							<div class="length">
+								<button class="btn-minus"></button>
+								<input type="text" class="inp" value="1">
+								<button class="btn-plus"></button>
+							</div>
+
+						</td>
+						<td>1,580원</td>
+						<td><strong>15,800원</strong></td>
+						<td><button class="btn-common-del"><i class="xi-close-thin"></i></button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div class="cart-list mobile">
+			<ul>
+				<li>
+					<div class="img"><img src="img/product/tmp_thum.jpg"></div>
+					<div class="info">
+						<dl>
+							<dt><strong>스타패키지</strong><span>구독상품</span></dt>
+							<dd>
+								<div class="opt">칫솔 1 + 치약 30g + 치실 + 가글</div>
+								<div class="price">15,800 원</div>
+							</dd>
+						</dl>
+						<div class="length">
+							<button class="btn-minus"></button>
+							<input type="text" class="inp" value="1">
+							<button class="btn-plus"></button>
+						</div>
+						<button class="btn-common-del"><i class="xi-close-thin"></i></button>
+					</div>
+				</li>
+				<li>
+					<div class="img"><img src="img/product/tmp_thum.jpg"></div>
+					<div class="info">
+						<dl>
+							<dt><strong>스타패키지</strong><span>구독상품</span></dt>
+							<dd>
+								<div class="opt">칫솔 1 + 치약 30g + 치실 + 가글</div>
+								<div class="price">15,800 원</div>
+							</dd>
+						</dl>
+						<div class="length">
+							<button class="btn-minus"></button>
+							<input type="text" class="inp" value="1">
+							<button class="btn-plus"></button>
+						</div>
+						<button class="btn-common-del"><i class="xi-close-thin"></i></button>
+					</div>
+				</li>
+			</ul>			
+		</div>
+		
+		
+		<div class="cart-step">
+			<!-- 2. 날짜선택 -->
+			<div class="step2">
+				<div class="cart-price">
+					<div class="orther">
+						<dl>
+							<dt>배송비</dt>
+							<dd>2,000원</dd>
+						</dl>
+						<dl>
+							<dt>구독할인</dt>
+							<dd>-1,500원</dd>
+						</dl>
+						<dl>
+							<dt>포인트 <a href="#" class="btn-under">적용</a></dt>
+							<dd>-1,000P</dd>
+						</dl>
+					</div>
+					<div class="total">
+						<dl>
+							<dt>총 결제금액</dt>
+							<dd>28,600 원</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="calendar-cart">
+					<div class="tit"><strong>원하는 결제일 선택</strong></div>
+					<div class="tit2">오후 3시(15시)이전까지 구독 신청 시 당일발송됩니다.<br>오후 3시(15시)이후는 익일부터 선택 가능합니다.</div>
+					<div class="box">
+						<div id="CalendarCart" class="calendar"></div>
+						<div class="week">
+							<div class="btns">
+								<p><button class="btn-under active">4주 마다</button>
+									<span class="desc2">다음 결제일 : 2021.12.07(화요일)</span>
+								</p>
+								<p><button class="btn-under">12주 마다</button></p>
+								<p><button class="btn-under">16주 마다</button></p>
+							</div>
+							<div class="end">결제일자 : 2021.11.09일(화요일) / 4주 마다 선택</div>
+							<span class="desc3">*결제일이 토요일/공휴일인 경우 익일(또는 가장 빠른 영업일) 발송됩니다.</span>
+						</div>
+					</div>
+
+				</div>
+				<div class="btn-box-common1">
+					<a href="#" class="btn btn-type1">선택완료</a>
+				</div>
+			</div>
+			<!-- // 2. 날짜선택 -->
+			
+		</div>
+		
+		
+		
+		
+	</div>
+	<!-- // inner -->
+	
+	
+	<script>
+	$(function(){
+		$('#CalendarCart').datepicker({
+			onSelect:function(dateText,inst){
+				//console.log(dateText + ' / ' + inst);
+				date = dateText.slice(-2);
+				$('.calender-choice .tit.before').hide();
+				$('.calender-choice .tit.after').show();
+				$('.calender-choice #Date').text(date+'일');
+				$('.calender-choice .box').slideUp(300);
+			}
+		});	
+    });
+	</script>
+	
+	
+	
+</body>
+</html>
+

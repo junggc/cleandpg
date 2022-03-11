@@ -1,0 +1,725 @@
+﻿
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>클린디 WORKSHEET</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="css/front.css">
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/front.js"></script>
+</head>
+<body>
+	<style>
+		h5  { font-size:20px; font-weight: 600; margin-bottom: 15px; }
+		.url { display: none; }
+		.inner { max-width:1000px; margin: 0 auto; }
+		.worksheet { padding-bottom: 20px;  }
+		.worksheet .head {  background: #ffdc2d; color: #222; margin-bottom: 40px; }
+		.worksheet .head .inner { max-width:1000px; margin: 0 auto; padding:50px 0; background: url(img/common/worksheet.png) no-repeat 100% 50%; background-size:130px auto; }
+		.worksheet .head h2 { font-size:40px; font-weight: 700; margin-bottom: 0px; }
+		.worksheet .head p { font-size:15px; font-weight: 500; margin-bottom: 20px; }
+		.worksheet .head div { font-size:15px; color: #222; font-weight: 400; }
+		.worksheet .head a{  display: inline-block; vertical-align: middle; padding:5px 10px; border-radius:25px; font-size:13px; color: #fff; background: #1e90ff}
+		.work-table { margin-bottom: 30px;}
+		.work-table table { width:100%; border-collapse: collapse;  }
+		.work-table table thead th { padding:8px 0; font-size:13px; font-weight: 600;color: #222; background: #f5f5f5; border: 1px solid #ddd; }
+		.work-table table tbody td { padding:8px 12px; font-size:12px; font-weight: 400;color: #444; border: 1px solid #ddd; }
+		.work-table table tbody tr:nth-child(even) { background: #f9f9f9; }
+		.work-table table tbody td { text-align: center; }
+		.work-table table tbody td.ing { background: #607ec6 !important} /* 진행중 */
+		.work-table table tbody td.ing:before{ content: '진행중' !important; display: inline;}
+		.work-table table tbody td.end { background: #96bf27 !important} /* 완료 */
+		.work-table table tbody td.end:before{ content: '완료' !important; display: inline;}
+		.work-table table tbody td.modify { background: #c66060 !important} /* 수정중 */
+		.work-table table tbody td.modify:before{ content: '수정중' !important; display: inline;}
+		.work-table table tbody td:nth-child(3) { background: #ffdc2d; color: #fff; font-weight: 600;} /* 진행전 */
+		.work-table table tbody td:nth-child(3):before { content: '진행전'; display: inline;}
+		.worksheet .body { padding:0 10px; }
+		.btn-link { background: #ff6751; color: #fff; padding:3px 5px; border-radius:5px; font-size:12px; white-space: nowrap;}
+		.desc { padding:15px; background: #f2f2f2; border:1px  dashed #ccc; font-size:13px; line-height: 1.7; margin-bottom: 20px; }
+		@media all and (max-width:767px) {
+			.worksheet .head .inner { padding:30px 15px; }
+			.work-table table thead th,
+			.work-table table tbody td { font-size:11px; word-break: break-all; }
+			.btn-type2 { white-space: nowrap;padding:0 5px;}
+		}
+	</style>
+	<div class="worksheet">
+		<div class="head">
+			<div class="inner">
+				<h3>Project : 클린디 </h3>
+				<h2>WORKSHEET</h2>
+				<div>Total Page. <b id="total">00</b></div>
+				<p>LastUpdate <strong>2021.11.29</strong></p>
+				<p>Comment: <br>
+					<strong>
+					1. 진단안내 결과 작업<br>
+					2. 진단안내 결과 팝업
+					</strong>
+				</p>
+				<p>Link : <strong> <a href="web.zip" target="_blank">퍼블리싱파일 다운로드</a></strong></p>
+			</div>
+		</div>
+		<div class="body">
+			<div class="inner">
+				<h5>0. 기타</h5>
+				<div class="desc">- 이메일은 이미지를 절대경로로 올려야 하며 email 폴더에 있습니다.</div>
+				<div class="work-table">
+					<table>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:34%">
+							<col style="width:18%">
+							<col style="width:18%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Depth1.</th>
+								<th>Depth2.</th>
+								<th>Status.</th>
+								<th>Link</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="url">MODAL모음</span>MODAL모음</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							
+							<tr>
+								<td><span class="url">email/email</span>이메일</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
+				</div>
+				
+				<h5>1. 메인 및 소개</h5>
+				<div class="desc">- 레이아웃은 main.html 참조</div>
+				<div class="work-table">
+					<table>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:34%">
+							<col style="width:18%">
+							<col style="width:18%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Depth1.</th>
+								<th>Depth2.</th>
+								<th>Status.</th>
+								<th>Link</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="url">main</span>main</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">클린디_클린디소개</span>클린디소개</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">클린디_왜클린디인가</span>왜클린디인가</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">클린디_특징및구성</span>특징및구성</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
+				</div>
+				
+				
+				
+
+
+
+				<h5>2. 상품</h5>
+				<div class="desc">- 중복되는 요소들이 많으니 개발에 참고해주세요.
+				</div>
+				<div class="work-table">
+					<table>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:34%">
+							<col style="width:18%">
+							<col style="width:18%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Depth1.</th>
+								<th>Depth2.</th>
+								<th>Status.</th>
+								<th>Link</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="url">상품_완료_회원_구독</span>상품_완료_회원_구독</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">상품_완료_회원_단품</span>상품_완료_회원_단품</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">상품_완료_비회원_구독</span>상품_완료_비회원_구독</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">상품_완료_비회원_단품</span>상품_완료_비회원_단품</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">상품_목록</span>목록</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">상품_상세</span>상세</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">상품_장바구니_구독</span>장바구니_구독</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">상품_장바구니_구독_결제하기_비회원</span>장바구니_구독_결제하기_비회원</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">상품_장바구니_구독_결제하기_회원</span>장바구니_구독_결제하기_회원</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">상품_장바구니_구독_날짜선택</span>장바구니_구독_날짜선택</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">상품_장바구니_단품</span>장바구니_단품</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">상품_장바구니_단품_비회원</span>장바구니_단품_비회원</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">상품_장바구니_단품_회원_최초결제카드입력</span>장바구니_단품_회원_최초결제카드입력</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">상품_장바구니_비었음</span>장바구니_비었음</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+
+
+				<h5>3. 진단</h5>
+				
+				<div class="work-table">
+					<table>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:34%">
+							<col style="width:18%">
+							<col style="width:18%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Depth1.</th>
+								<th>Depth2.</th>
+								<th>Status.</th>
+								<th>Link</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="url">진단_안내</span>진단</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">진단_결과</span>결과</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">진단_결과_구독변경</span>구독변경</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
+				</div>
+				
+				
+				
+				<h5>5. 커뮤니티</h5>
+				<div class="desc">- 고객센터 > 1:1 문의는 화면설계서엔 없으나 디자인탭버튼만 있음</div>
+				<div class="work-table">
+					<table>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:34%">
+							<col style="width:18%">
+							<col style="width:18%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Depth1.</th>
+								<th>Depth2.</th>
+								<th>Status.</th>
+								<th>Link</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="url">커뮤니티_매거진_목록</span>매거진_목록</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">커뮤니티_매거진_상세</span>매거진_상세</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">커뮤니티_이벤트_목록</span>이벤트_목록</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">커뮤니티_이벤트_상세</span>이벤트_상세</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">커뮤니티_고객센터_이용안내</span>고객센터_이용안내</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">커뮤니티_고객센터_브릿지</span>고객센터_브릿지</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">커뮤니티_고객센터_등급별혜택</span>고객센터_등급별혜택</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">커뮤니티_고객센터_FAQ</span>고객센터_FAQ</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">커뮤니티_고객센터_공지사항_목록</span>고객센터_공지사항_목록</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">커뮤니티_고객센터_공지사항_상세</span>고객센터_공지사항_상세</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
+				</div>
+				
+				
+				<h5>6. 마이페이지</h5>
+				<div class="desc"> 
+				</div>
+				<div class="work-table">
+					<table>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:34%">
+							<col style="width:18%">
+							<col style="width:18%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Depth1.</th>
+								<th>Depth2.</th>
+								<th>Status.</th>
+								<th>Link</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="url">마이페이지_마이홈_브릿지</span>마이홈_브릿지</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_주문관리_브릿지</span>주문관리_브릿지</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_주문관리_주문내역</span>주문관리_주문내역</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_주문관리_주문내역_상세</span>주문관리_주문내역_상세</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_주문관리_취소환불내역</span>주문관리_취소환불내역</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_주문관리_취소환불내역_상세</span>주문관리_취소환불내역_상세</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_주문관리_반품신청</span>주문관리_반품신청</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_주문관리_반품교환내역</span>주문관리_반품교환내역</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_주문관리_반품교환내역_상세</span>주문관리_반품교환내역_상세</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_주문관리_교환신청</span>주문관리_교환신청</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_주문관리_결제취소환불신청_계좌</span>주문관리_결제취소환불신청_계좌</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_주문관리_결제취소환불신청_카드</span>주문관리_결제취소환불신청_카드</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_구독관리_브릿지</span>구독관리_브릿지</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_구독관리_결제정보변경</span>구독관리_결제정보변경</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_구독관리_구독내역</span>구독관리_구독내역</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_구독관리_구독내역_상세</span>구독관리_구독내역_상세</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_구독관리_구독일정관리</span>구독관리_구독일정관리</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_활동관리_브릿지</span>활동관리_브릿지</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_활동관리_나의리뷰</span>활동관리_나의리뷰</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_활동관리_나의문의</span>활동관리_나의문의</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_활동관리_나의문의_작성</span>활동관리_나의문의_작성</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_활동관리_알림</span>활동관리_알림</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_진단혜택_브릿지</span>진단혜택_브릿지</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_진단혜택_나의포인트</span>진단혜택_나의포인트</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_진단혜택_나의쿠폰</span>진단혜택_나의쿠폰</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_진단혜택_나의진단관리</span>진단혜택_나의진단관리</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_나의정보_브릿지</span>나의정보_브릿지</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_나의정보_배송지관리</span>나의정보_배송지관리</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">마이페이지_나의정보_회원탈퇴</span>나의정보_회원탈퇴</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+
+				<h5>7. 회원</h5>
+				<div class="desc">- </div>
+				<div class="work-table">
+					<table>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:34%">
+							<col style="width:18%">
+							<col style="width:18%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Depth1.</th>
+								<th>Depth2.</th>
+								<th>Status.</th>
+								<th>Link</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="url">MODAL모음</span>MODAL모음</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">회원가입_로그인</span>로그인</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">회원가입_비밀번호재설정</span>비밀번호재설정</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">회원가입_아이디비번찾기_비밀번호찾기</span>비밀번호찾기</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">회원가입_아이디비번찾기_비밀번호찾기_이메일</span>이메일</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">회원가입_아이디비번찾기_비밀번호찾기_이메일2</span>이메일2</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">회원가입_아이디비번찾기_비밀번호찾기_휴대번호</span>휴대번호</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">회원가입_아이디비번찾기_비밀번호찾기_휴대번호2</span>휴대번호2</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">회원가입_아이디비번찾기_비밀번호찾기_휴대번호3</span>휴대번호3</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">회원가입_아이디비번찾기_아이디찾기</span>아이디찾기</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">회원가입_아이디비번찾기_아이디찾기_결과</span>아이디찾기_결과</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">회원가입_아이디비번찾기_아이디찾기_없음</span>아이디찾기_없음</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							<tr>
+								<td><span class="url">회원가입_회원가입</span>회원가입</td>
+								<td></td>
+								<td class="end"></td>
+								<td><a href="111" class="btn-link" target="_blank">링크</a></td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
+				</div>
+				
+				
+
+
+			</div>
+		</div>
+		<script>
+		$(function(){
+			var trLength =  $('.work-table table tbody tr').length;
+			$('#total').text(trLength);
+			for(var i = 0; i<trLength; i++){
+				// 넘버링
+				//$('.work-table table tbody tr').eq(i).find('td:first-child').html(i+1);
+				console.log($('.work-table table tbody tr').eq(i).find('td:nth-child(1) .url').text());
+				$('.work-table table tbody tr').eq(i).find('a').attr('href', $('.work-table table tbody tr').eq(i).find('td:nth-child(1) .url').text() + '.html');
+			}
+		})
+		</script>
+	</div>
+
+
+
+</body>
+</html>
